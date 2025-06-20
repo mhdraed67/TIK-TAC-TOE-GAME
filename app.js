@@ -64,4 +64,5 @@ const resetGame = () => {
         box.disabled = false; // Enable boxes for new game
     });
     turnO = true;
+    count=0;
 }
