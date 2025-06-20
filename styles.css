@@ -1,0 +1,91 @@
+/* Global styles */
+body {
+    background-color: #36454F; /* Dark slate gray */
+    font-family: Arial, sans-serif;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #F0F8FF; /* Alice Blue */
+}
+
+/* Main container */
+.container {
+    height: 70vh;
+    width: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Game grid */
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Individual boxes (tiles) */
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 1rem;
+    border: 2px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for interactivity */
+.box:hover {
+    background-color: #d3e0ea;
+}
+.reset-button {
+    margin-bottom: 10px;
+    padding: 12px 24px;
+    background-color: #36454F; /* Matches the body background */
+    color: #F0F8FF; /* Light text for contrast */
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.status {
+    font-size: 1.5rem;
+    color: #2c3e50; /* Darker shade for status text */
+}
+
+/* Hover effect */
+.reset-button:hover {
+    background-color: #2c3a45; /* Slightly lighter/darker for effect */
+    transform: scale(1.05); /* Slight grow on hover */
+    color: #ffffff; /* Optional: brighten the text */
+}
+.author{
+    display: flex;
+    font-size: 0.8rem;
+    color: #2c3e50; /* Darker shade for author text */
+}
